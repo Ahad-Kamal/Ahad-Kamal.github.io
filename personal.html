@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dossier Archives | Professional Documents</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header class="navbar" role="banner">
+        <div class="container nav-container">
+            <a href="index.html" class="nav-logo" aria-label="Developer Home">
+                <span>//</span> CORE_DEV
+            </a>
+            <button class="nav-toggle" aria-label="Toggle Navigation" aria-expanded="false" aria-controls="primary-navigation">
+                <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+            </button>
+            <nav id="primary-navigation">
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="individual-work.html" class="nav-link">Solo Projects</a></li>
+                    <li><a href="teamwork.html" class="nav-link">Team Projects</a></li>
+                    <li><a href="documents.html" class="nav-link active">Documents</a></li>
+                    <li><a href="reviews.html" class="nav-link">Tech Reviews</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container section-padding" role="main">
+        <div class="section-header">
+            <h2>Technical Dossier</h2>
+        </div>
+
+        <div class="doc-split-layout">
+            
+            <section class="doc-section" aria-labelledby="resume-head">
+                <h3 id="resume-head" style="margin-bottom: 1.5rem; text-transform: uppercase; text-align: center;">Technical Resume</h3>
+                <div class="doc-preview-box glass-panel">
+                    <iframe src="documents/Software_Engineer_Resume.pdf" title="Software Engineering Resume Preview"></iframe>
+                </div>
+                <a href="documents/Software_Engineer_Resume.pdf" download class="btn btn-primary btn-animate-icon" style="align-self: center;">
+                    <i class="fas fa-file-download"></i> Download Resume PDF
+                </a>
+            </section>
+
+            <section class="doc-section" aria-labelledby="loi-head">
+                <h3 id="loi-head" style="margin-bottom: 1.5rem; text-transform: uppercase; text-align: center;">Statement of Intent</h3>
+                <div class="doc-preview-box glass-panel">
+                    <iframe src="documents/Letter_of_Intent.pdf" title="Letter of Intent Document Preview"></iframe>
+                </div>
+                <a href="documents/Letter_of_Intent.pdf" download class="btn btn-secondary btn-animate-icon" style="align-self: center;">
+                    <i class="fas fa-download"></i> Download Intent PDF
+                </a>
+            </section>
+
+        </div>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+        <div class="container footer-container">
+            <p class="footer-copy">&copy; <span id="dynamic-year"></span> CORE_DEV. Built for Next-Gen Portfolios.</p>
+            <div class="footer-socials">
+                <a href="https://github.com" target="_blank" rel="noopener" class="social-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
