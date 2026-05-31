@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engine Deconstructs | Architecture Reviews</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header class="navbar" role="banner">
+        <div class="container nav-container">
+            <a href="index.html" class="nav-logo" aria-label="Developer Home">
+                <span>//</span> CORE_DEV
+            </a>
+            <button class="nav-toggle" aria-label="Toggle Navigation" aria-expanded="false" aria-controls="primary-navigation">
+                <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+            </button>
+            <nav id="primary-navigation">
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="individual-work.html" class="nav-link">Solo Projects</a></li>
+                    <li><a href="teamwork.html" class="nav-link">Team Projects</a></li>
+                    <li><a href="documents.html" class="nav-link">Documents</a></li>
+                    <li><a href="reviews.html" class="nav-link active">Tech Reviews</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container section-padding" role="main">
+        <div class="section-header">
+            <h2>Engine Deconstructs</h2>
+        </div>
+
+        <div class="grid-2">
+            
+            <article class="glass-panel review-card">
+                <img src="images/review-game-1.jpg" alt="Cinematic title image of a high-end physics engine example" class="review-thumb">
+                <div class="review-body">
+                    <h3 class="review-title">Horizon Zero Dawn: Decima Engine Optimization</h3>
+                    <p class="review-snippet">An architectural breakdown focusing on how Guerrilla Games manages asset streaming states and dynamic GPU buffer adjustments without disrupting gameplay loops.</p>
+                    
+                    <div class="rating-container">
+                        <div class="rating-row">
+                            <div class="rating-info"><span>Memory Management</span><span>92%</span></div>
+                            <div class="rating-bar-bg"><div class="rating-bar-fill" style="width: 92%;"></div></div>
+                        </div>
+                        <div class="rating-row">
+                            <div class="rating-info"><span>Pipeline Efficiency</span><span>88%</span></div>
+                            <div class="rating-bar-bg"><div class="rating-bar-fill" style="width: 88%;"></div></div>
+                        </div>
+                    </div>
+
+                    <div id="review-decima" class="review-full-content">
+                        <p><strong>Low-Level Breakdown:</strong> Decima utilizes a highly optimized structural architecture that groups objects into dense virtual blocks. By processing memory objects as continuous contiguous streams instead of scattered individual pointer queries, the engine keeps cache misses to a absolute minimum.</p>
+                        <p style="margin-top: 0.75rem;"><strong>The Takeaway:</strong> Keeping data aligned in predictable arrays beats relying on heavy runtime checking layers every single frame.</p>
+                    </div>
+
+                    <button class="btn-toggle-review" data-target="review-decima" aria-expanded="false">
+                        Read Full Review <i class="fas fa-chevron-down"></i>
+                    </button>
+                </div>
+            </article>
+
+            <article class="glass-panel review-card">
+                <img src="images/review-game-1.jpg" alt="Sci-fi cyberpunk game tracking environment framework" class="review-thumb">
+                <div class="review-body">
+                    <h3 class="review-title">Cyberpunk 2077: Ray-Tracing Architecture</h3>
+                    <p class="review-snippet">Analyzing the computational trade-offs between hardware-accel BVH structures and legacy rasterized reflection maps in dynamic lighting pipelines.</p>
+                    
+                    <div class="rating-container">
+                        <div class="rating-row">
+                            <div class="rating-info"><span>GPU Bound Optimization</span><span>74%</span></div>
+                            <div class="rating-bar-bg"><div class="rating-bar-fill" style="width: 74%;"></div></div>
+                        </div>
+                        <div class="rating-row">
+                            <div class="rating-info"><span>Asset Level-Of-Detail Scaling</span><span>85%</span></div>
+                            <div class="rating-bar-bg"><div class="rating-bar-fill" style="width: 85%;"></div></div>
+                        </div>
+                    </div>
+
+                    <div id="review-cp2077" class="review-full-content">
+                        <p><strong>Low-Level Breakdown:</strong> CD Projekt Red utilizes sophisticated spatial tracking systems to dynamically cull off-camera ray queries. By dropping updates for ray calculations occurring out of the player's immediate sightline, they prevent performance tanks on high-density cards.</p>
+                        <p style="margin-top: 0.75rem;"><strong>The Takeaway:</strong> Smart object spatial culling remains the single most important tool when you are trying to squeeze high-end ray tracing onto consumer-level GPUs.</p>
+                    </div>
+
+                    <button class="btn-toggle-review" data-target="review-cp2077" aria-expanded="false">
+                        Read Full Review <i class="fas fa-chevron-down"></i>
+                    </button>
+                </div>
+            </article>
+
+        </div>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+        <div class="container footer-container">
+            <p class="footer-copy">&copy; <span id="dynamic-year"></span> CORE_DEV. Built for Next-Gen Portfolios.</p>
+            <div class="footer-socials">
+                <a href="https://github.com" target="_blank" rel="noopener" class="social-icon" aria-label="GitHub Links Portfolio"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-icon" aria-label="LinkedIn Network Connections"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
