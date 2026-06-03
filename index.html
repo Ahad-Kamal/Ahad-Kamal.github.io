@@ -12,7 +12,7 @@
     <header class="navbar" role="banner">
         <div class="container nav-container">
             <a href="index.html" class="nav-logo" aria-label="Developer Home">
-                <span>//</span> CORE_DEV
+                <span>//</span> Ahad Kamal
             </a>
             
             <button class="nav-toggle" aria-label="Toggle Navigation Menu" aria-expanded="false" aria-controls="primary-navigation">
@@ -26,8 +26,8 @@
                     <li><a href="index.html" class="nav-link active">Home</a></li>
                     <li><a href="individual-work.html" class="nav-link">Solo Projects</a></li>
                     <li><a href="teamwork.html" class="nav-link">Team Projects</a></li>
-                    <li><a href="documents.html" class="nav-link">Documents</a></li>
-                    <li><a href="reviews.html" class="nav-link">Tech Reviews</a></li>
+                    <li><a href="documents.html" class="nav-link">Personal</a></li>
+                    <li><a href="reviews.html" class="nav-link">Game Reviews</a></li>
                 </ul>
             </nav>
         </div>
@@ -35,76 +35,79 @@
 
     <main role="main">
         
-        <section class="hero" aria-labelledby="hero-title">
-            <div class="container hero-content">
-                <h1 id="hero-title">Engineered to Build <span>Immersive Worlds</span></h1>
-                <p class="subtitle">Gameplay Programmer & Engine Specialist</p>
-                <p class="description">
-                    Specializing in custom engine integrations, deterministic physics systems, and low-overhead rendering optimization. Transforming complex mathematical matrices into cinematic AAA game mechanics.
-                </p>
-                <div class="hero-buttons">
-                    <a href="individual-work.html" class="btn btn-primary" role="button">
-                        <i class="fas fa-crosshairs"></i> View My Work
-                    </a>
-                    <a href="documents.html" class="btn btn-secondary" role="button">
-                        <i class="fas fa-file-code"></i> Read Resume
-                    </a>
+        <!-- UPDATED TWO-COLUMN HERO INTEGRATION -->
+        <section class="hero" aria-labelledby="hero-title" style="display: flex; align-items: center;">
+            <div class="container grid-2" style="align-items: center; width: 100%;">
+                
+                <!-- Left Column: Copy Terminal -->
+                <div class="hero-content">
+                    <h1 id="hero-title"><span>Ahad Kamal</span></h1>
+                    <p class="subtitle">Software Developer</p>
+                    <p class="description">
+                        Specializing in coding engine tools and gameplay systems.
+                    </p>
                 </div>
+
+                <!-- Right Column: Labeled Premium Key Art Container -->
+                <div class="glass-panel" style="overflow: hidden; aspect-ratio: 16 / 10; border: var(--border-glow); box-shadow: 0 0 25px var(--accent-cyber-glow);">
+                    <img src="images/hero-bg.jpg" alt="Cinematic game engine editor preview showcasing active wireframe rendering and 3D matrix nodes" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+
             </div>
         </section>
 
         <section class="section-padding" aria-labelledby="matrix-title">
             <div class="container">
                 <div class="section-header">
-                    <h2 id="matrix-title">System Portals</h2>
+                    <h2 id="matrix-title">Links</h2>
                 </div>
                 
                 <div class="grid-3">
                     <a href="individual-work.html" class="glass-panel portal-card" aria-label="Go to Individual Work">
                         <div>
                             <div class="icon"><i class="fas fa-user-shield"></i></div>
-                            <h3>Solo Missions</h3>
-                            <p>Deep technical architecture write-ups, custom rendering loops, and optimization pipelines created entirely from scratch.</p>
+                            <h3>Projects</h3>
+                            <p></p>
                         </div>
                     </a>
 
                     <a href="teamwork.html" class="glass-panel portal-card" aria-label="Go to Teamwork Projects">
                         <div>
                             <div class="icon"><i class="fas fa-users"></i></div>
-                            <h3>Co-Op Deployments</h3>
-                            <p>Studio assignments and collaborative game jam systems breaking down multi-disciplinary pipeline workflows.</p>
+                            <h3>Games</h3>
+                            <p></p>
                         </div>
                     </a>
 
                     <a href="documents.html" class="glass-panel portal-card" aria-label="Go to Personal Documents">
                         <div>
                             <div class="icon"><i class="fas fa-folder-open"></i></div>
-                            <h3>Dossier / Briefs</h3>
-                            <p>Access high-definition PDF technical resumes, design statements of intent, and verification documents.</p>
+                            <h3>Documents</h3>
+                            <p></p>
                         </div>
                     </a>
 
                     <a href="reviews.html" class="glass-panel portal-card" aria-label="Go to Tech Reviews">
                         <div>
                             <div class="icon"><i class="fas fa-terminal"></i></div>
-                            <h3>Engine Deconstructs</h3>
-                            <p>Deep-dive architecture breakdowns analyzing contemporary game builds, optimization faults, and engine performance.</p>
+                            <h3>Game Reviews</h3>
+                            <p>Reviews of games I've played from both an objective and personal point of view.</p>
                         </div>
                     </a>
 
                     <a href="https://github.com" target="_blank" rel="noopener" class="glass-panel portal-card" aria-label="External Link to Github profile">
                         <div>
                             <div class="icon"><i class="fab fa-github"></i></div>
-                            <h3>GitHub Core Repos</h3>
-                            <p>Direct code review arrays. Explore continuous builds, low-level scripting architectures, and open-source contributions.</p>
+                            <h3>GitHub</h3>
+                            <p></p>
                         </div>
                     </a>
 
                     <a href="https://linkedin.com" target="_blank" rel="noopener" class="glass-panel portal-card" aria-label="External Link to LinkedIn profile">
                         <div>
                             <div class="icon"><i class="fab fa-linkedin-in"></i></div>
-                            <h3>Comms / LinkedIn</h3>
-                            <p>Network terminal dashboard. Connect directly for open production positions, contractual opportunities, or system consults.</p>
+                            <h3>LinkedIn</h3>
+                            <p></p>
                         </div>
                     </a>
                 </div>
@@ -114,7 +117,7 @@
 
     <footer class="footer" role="contentinfo">
         <div class="container footer-container">
-            <p class="footer-copy">&copy; <span id="dynamic-year"></span> CORE_DEV. Built for Next-Gen Portfolios.</p>
+            <p class="footer-copy">&copy; <span id="dynamic-year"></span> Ahad Kamal</p>
             <div class="footer-socials">
                 <a href="https://github.com" target="_blank" rel="noopener" class="social-icon" aria-label="GitHub Target Terminal"><i class="fab fa-github"></i></a>
                 <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-icon" aria-label="LinkedIn Network Uplink"><i class="fab fa-linkedin-in"></i></a>
