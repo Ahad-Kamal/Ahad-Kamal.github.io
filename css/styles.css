@@ -135,7 +135,7 @@ a:focus-visible, button:focus-visible {
 
 .grid-4 {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 2.5rem;
 }
 
@@ -731,7 +731,7 @@ a:focus-visible, button:focus-visible {
    ========================================================================== */
 
 /* Tablet & Smaller Layout adjustments */
-@media (max-width: 1000px) {
+@media (max-width: 1400px) {
     .team-card {
         grid-template-columns: 1fr;
     }
