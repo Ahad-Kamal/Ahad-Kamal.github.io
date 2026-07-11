@@ -216,40 +216,6 @@ a:focus-visible, button:focus-visible {
 /* ==========================================================================
    4. NAVIGATION COMPONENT (STICKY/GLASSMORPHIC)
    ========================================================================== */
-.navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: var(--nav-height);
-    z-index: 1000;
-    background: var(--bg-nav-glass);
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
-    border-bottom: var(--border-muted);
-    transition: var(--transition-fast);
-}
-
-.navbar.scrolled {
-    height: 70px;
-    border-bottom: var(--border-glow);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
-}
-
-.nav-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 2rem;
-}
-
-nav {
-    flex: 1;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-
 .nav-logo {
     font-family: var(--font-heading);
     font-size: 1.5rem;
@@ -259,7 +225,6 @@ nav {
     letter-spacing: 2px;
     display: flex;
     align-items: center;
-    white-space: nowrap;
     gap: 0.5rem;
 }
 
