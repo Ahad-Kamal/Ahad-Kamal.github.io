@@ -133,6 +133,23 @@ a:focus-visible, button:focus-visible {
     gap: 2.5rem;
 }
 
+.grid-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.social-card {
+    width: 220px;
+}
+
 .flex-center {
     display: flex;
     align-items: center;
