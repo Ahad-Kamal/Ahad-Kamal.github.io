@@ -134,9 +134,8 @@ a:focus-visible, button:focus-visible {
 }
 
 .grid-4 {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 2.5rem;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 2rem;
 }
 
 .social-links {
@@ -405,7 +404,7 @@ a:focus-visible, button:focus-visible {
 
 /* Portal/Quick-Access Matrix Grid */
 .portal-card {
-    padding: 2.5rem;
+    padding: 1.5rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -414,7 +413,7 @@ a:focus-visible, button:focus-visible {
 }
 
 .portal-card .icon {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     color: var(--accent-cyber);
     margin-bottom: 1.5rem;
 }
