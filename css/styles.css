@@ -240,7 +240,11 @@ a:focus-visible, button:focus-visible {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 100%;
+    gap: 2rem;
+}
+
+nav {
+    flex: 1;
 }
 
 .nav-logo {
@@ -252,6 +256,7 @@ a:focus-visible, button:focus-visible {
     letter-spacing: 2px;
     display: flex;
     align-items: center;
+    white-space: nowrap;
     gap: 0.5rem;
 }
 
@@ -758,7 +763,7 @@ a:focus-visible, button:focus-visible {
    ========================================================================== */
 
 /* Tablet & Smaller Layout adjustments */
-@media (max-width: 992px) {
+@media (max-width: 1000px) {
     .team-card {
         grid-template-columns: 1fr;
     }
