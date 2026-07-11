@@ -5,6 +5,7 @@ commit
 +7
 Lines changed: 7 additions & 0 deletions
 Original file line number	Original file line	Diff line number	Diff line change
+
 /* ==========================================================================
    1. DESIGN SYSTEM VARIABLES & FONTS
    ========================================================================== */
@@ -16,12 +17,12 @@ Original file line number	Original file line	Diff line number	Diff line change
     --bg-dark-slate: #1f2833;
     --bg-card-glass: rgba(31, 40, 51, 0.65);
     --bg-nav-glass: rgba(11, 12, 16, 0.75);
-
+    
     --accent-cyber: #66fcf1;
     --accent-laser: #45a29e;
     --accent-cyber-glow: rgba(102, 252, 241, 0.25);
     --accent-laser-glow: rgba(69, 162, 158, 0.2);
-
+    
     --text-platinum: #ffffff;
     --text-muted: #c5c6c7;
     --text-dark: #0b0c10;
@@ -37,7 +38,7 @@ Original file line number	Original file line	Diff line number	Diff line change
     /* Fluid Typography Clamps (Responsive without Media Queries) */
     --font-heading: 'Orbitron', sans-serif;
     --font-body: 'Inter', sans-serif;
-
+    
     --fs-h1: clamp(2.5rem, 5vw, 4.5rem);
     --fs-h2: clamp(1.8rem, 4vw, 2.5rem);
     --fs-h3: clamp(1.4rem, 2.5vw, 1.8rem);
@@ -142,8 +143,8 @@ a:focus-visible, button:focus-visible {
 
 .grid-4 {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2.5rem;
 }
 
 .social-links {
@@ -247,7 +248,11 @@ a:focus-visible, button:focus-visible {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 100%;
+    gap: 2rem;
+}
+
+nav {
+    flex: 1;
 }
 
 .nav-logo {
@@ -259,6 +264,7 @@ a:focus-visible, button:focus-visible {
     letter-spacing: 2px;
     display: flex;
     align-items: center;
+    white-space: nowrap;
     gap: 0.5rem;
 }
 
@@ -268,6 +274,7 @@ a:focus-visible, button:focus-visible {
     object-fit: contain;
     flex-shrink: 0;
 }
+
 .nav-logo span {
     color: var(--accent-cyber);
     text-shadow: 0 0 10px var(--accent-cyber-glow);
@@ -824,7 +831,7 @@ a:focus-visible, button:focus-visible {
         flex-direction: column;
         width: 100%;
     }
-
+    
     .btn {
         width: 100%;
     }
