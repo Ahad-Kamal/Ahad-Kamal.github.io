@@ -255,6 +255,13 @@ a:focus-visible, button:focus-visible {
     gap: 0.5rem;
 }
 
+.nav-logo-icon {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
 .nav-logo span {
     color: var(--accent-cyber);
     text-shadow: 0 0 10px var(--accent-cyber-glow);
