@@ -1,3 +1,10 @@
+
+commit
+8e3e00d
+‎css/styles.css‎
++7
+Lines changed: 7 additions & 0 deletions
+Original file line number	Original file line	Diff line number	Diff line change
 /* ==========================================================================
    1. DESIGN SYSTEM VARIABLES & FONTS
    ========================================================================== */
@@ -9,12 +16,12 @@
     --bg-dark-slate: #1f2833;
     --bg-card-glass: rgba(31, 40, 51, 0.65);
     --bg-nav-glass: rgba(11, 12, 16, 0.75);
-    
+
     --accent-cyber: #66fcf1;
     --accent-laser: #45a29e;
     --accent-cyber-glow: rgba(102, 252, 241, 0.25);
     --accent-laser-glow: rgba(69, 162, 158, 0.2);
-    
+
     --text-platinum: #ffffff;
     --text-muted: #c5c6c7;
     --text-dark: #0b0c10;
@@ -30,7 +37,7 @@
     /* Fluid Typography Clamps (Responsive without Media Queries) */
     --font-heading: 'Orbitron', sans-serif;
     --font-body: 'Inter', sans-serif;
-    
+
     --fs-h1: clamp(2.5rem, 5vw, 4.5rem);
     --fs-h2: clamp(1.8rem, 4vw, 2.5rem);
     --fs-h3: clamp(1.4rem, 2.5vw, 1.8rem);
@@ -135,7 +142,7 @@ a:focus-visible, button:focus-visible {
 
 .grid-4 {
     display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
 }
 
@@ -216,6 +223,33 @@ a:focus-visible, button:focus-visible {
 /* ==========================================================================
    4. NAVIGATION COMPONENT (STICKY/GLASSMORPHIC)
    ========================================================================== */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: var(--nav-height);
+    z-index: 1000;
+    background: var(--bg-nav-glass);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-bottom: var(--border-muted);
+    transition: var(--transition-fast);
+}
+
+.navbar.scrolled {
+    height: 70px;
+    border-bottom: var(--border-glow);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
 .nav-logo {
     font-family: var(--font-heading);
     font-size: 1.5rem;
@@ -234,7 +268,6 @@ a:focus-visible, button:focus-visible {
     object-fit: contain;
     flex-shrink: 0;
 }
-
 .nav-logo span {
     color: var(--accent-cyber);
     text-shadow: 0 0 10px var(--accent-cyber-glow);
@@ -405,7 +438,7 @@ a:focus-visible, button:focus-visible {
 
 /* Portal/Quick-Access Matrix Grid */
 .portal-card {
-    padding: 1.5rem;
+    padding: 2.5rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -414,7 +447,7 @@ a:focus-visible, button:focus-visible {
 }
 
 .portal-card .icon {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     color: var(--accent-cyber);
     margin-bottom: 1.5rem;
 }
@@ -731,7 +764,7 @@ a:focus-visible, button:focus-visible {
    ========================================================================== */
 
 /* Tablet & Smaller Layout adjustments */
-@media (max-width: 1400px) {
+@media (max-width: 992px) {
     .team-card {
         grid-template-columns: 1fr;
     }
@@ -791,7 +824,7 @@ a:focus-visible, button:focus-visible {
         flex-direction: column;
         width: 100%;
     }
-    
+
     .btn {
         width: 100%;
     }
