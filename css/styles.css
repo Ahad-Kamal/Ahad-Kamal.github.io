@@ -135,8 +135,8 @@ a:focus-visible, button:focus-visible {
 
 .grid-4 {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2.5rem;
 }
 
 .social-links {
