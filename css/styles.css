@@ -464,7 +464,6 @@ a:focus-visible, button:focus-visible {
 .showcase-media {
     position: relative;
     width: 100%;
-    aspect-ratio: 16 / 9;
     background: var(--bg-dark-slate);
     border-radius: var(--radius-sharp);
     overflow: hidden;
