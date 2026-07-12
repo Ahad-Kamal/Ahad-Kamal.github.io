@@ -590,7 +590,7 @@ a:focus-visible, button:focus-visible {
 
 .doc-preview-box {
     width: 100%;
-    height: 600px;
+    height: 1200px;
     background: var(--bg-dark-slate);
     border: var(--border-muted);
     border-radius: var(--radius-sharp);
