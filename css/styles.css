@@ -579,7 +579,6 @@ a:focus-visible, button:focus-visible {
    9. PAGE 4: PERSONAL DOCUMENTS STYLES
    ========================================================================== */
 .doc-split-layout {
-    display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
 }
