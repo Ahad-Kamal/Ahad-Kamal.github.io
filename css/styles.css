@@ -575,6 +575,14 @@ a:focus-visible, button:focus-visible {
     color: var(--text-platinum);
 }
 
+.text-link {
+    color: var(--accent-cyber);
+}
+
+.text-link:hover {
+    text-shadow: 0 0 8px var(--accent-cyber-glow);
+}
+
 /* ==========================================================================
    9. PAGE 4: PERSONAL DOCUMENTS STYLES
    ========================================================================== */
