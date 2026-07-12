@@ -520,6 +520,7 @@ a:focus-visible, button:focus-visible {
 .team-card {
     display: grid;
     grid-template-columns: 2fr 1fr;
+    align-items: center;
     border: var(--border-muted);
     border-radius: var(--radius-sharp);
     overflow: hidden;
@@ -529,8 +530,7 @@ a:focus-visible, button:focus-visible {
 .video-container {
     position: relative;
     width: 100%;
-    padding-bottom: 56.25%; /* Perfect 16:9 Aspect Ratio */
-    height: 0;
+    aspect-ratio: 16 / 9;
     background: #000;
 }
 
@@ -573,6 +573,14 @@ a:focus-visible, button:focus-visible {
 .meta-value {
     font-size: var(--fs-body);
     color: var(--text-platinum);
+}
+
+.text-link {
+    color: var(--accent-cyber);
+}
+
+.text-link:hover {
+    text-shadow: 0 0 8px var(--accent-cyber-glow);
 }
 
 /* ==========================================================================
