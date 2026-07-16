@@ -636,6 +636,13 @@ a:focus-visible, button:focus-visible {
 }
 
 /* Metric / Performance Rating Layouts */
+.review-content {
+    font-size: var(--fs-body);
+    color: var(--text-muted);
+    line-height: 1.8;
+    margin-top: 1rem;
+}
+
 .rating-container {
     margin: 1rem 0 1.5rem 0;
 }
