@@ -37,32 +37,68 @@
 
         <article class="grid-2 project-showcase">
             <div class="showcase-media glass-panel">
-                <img src="images/project-solo-1.jpg" alt="AetherEngine custom structural rendering pipeline window visualizer">
+                <img src="images/dance.gif">
             </div>
             <div class="showcase-media glass-panel">
-                <img src="images/fbx-loader-demo.gif" alt="Animated demonstration of custom FBX loader parsing skeletal meshes and skinning matrices in real-time.">
+                <img src="images/death.gif">
             </div>
             <div class="showcase-content">
-                <h3 class="showcase-title">FBX Loader</h3>
+                <h3 class="showcase-title">FBX Model Viewer</h3>
+                
                 <div class="tech-stack-container">
                     <span class="tech-badge">C++</span>
                     <span class="tech-badge">Animation</span>
                     <span class="tech-badge">FBX</span>
                 </div>
+                
                 <div class="showcase-block">
                     <h4>Overview</h4>
-                    <p></p>
+                    <p>Created a system for loading and rendering fbx files using the Autodesk FBX SDK.</p>
                 </div>
+                
                 <div class="showcase-block">
-                    <h4>My Responsibilities</h4>
-                    <p></p>
-                </div>
-                <div class="showcase-block">
-                    <h4>Challenges &amp; Solutions</h4>
-                    <p></p>
+                    <h4>Features</h4>
+                    <p>Coded a pipeline for importing fbx files involving retrieving the model’s vertices, uvs, normals, joints, and animation data, then structuring the data into custom classes that server as wrappers for easier use. </p>
+                    <br>
+                    <p>The result is a fully rendered, texured, lit model, with animation keyframes being calculated using the bone hierarchy on the CPU and the mesh then skinned and animated on the GPU.</p>
+                    <br>
+                    <p>Implemented a custom .model file type that gets baked the first time the model is loaded, which is then instead parsed and loaded in manually without having to re-retrieve the data from the fbx file. This resulted in a 60% speed increase on load times.</p>
                 </div>
             </div>
         </article>
+
+        <article class="grid-2 project-showcase">
+            <div class="showcase-media glass-panel">
+                <img src="images/ChessView.png">
+            </div>
+            <div class="showcase-media glass-panel">
+                <img src="images/ChessMove.gif">
+            </div>
+            <div class="showcase-content">
+                <h3 class="showcase-title">Net Chess 3D</h3>
+                
+                <div class="tech-stack-container">
+                    <span class="tech-badge">C++</span>
+                    <span class="tech-badge">Graphics</span>
+                    <span class="tech-badge">Networking</span>
+                </div>
+                
+                <div class="showcase-block">
+                    <h4>Overview</h4>
+                    <p>Recreated the classic game of chess in my engine that accounts for piece movement rules, capturing logic, and proper turn order.</p>
+                </div>
+                
+                <div class="showcase-block">
+                    <h4>Features</h4>
+                    <p>Coded a manual obj file parser that reads in vertex, UV, and normal data and then outputs the data into a complete 3D model, with additional supporting functions that can create normals, tangents, and bitangents for models that do not contain this information.</p>
+                    <br>
+                    <p>Implemented a more sophisticated BlinnPhong shader that supports multiple directional lights, point lights, spotlights, specularity, glossiness, emissivity, and several debug shading modes that isolate each of these lights and values.</p>
+                    <br>
+                    <p>Incorporated the third party ImGui library for easy UI creation and implementation, including UI functionality for controlling light values and debug modes.</p>
+                </div>
+            </div>
+        </article>
+        
     </main>
 
     <footer class="footer" role="contentinfo">
