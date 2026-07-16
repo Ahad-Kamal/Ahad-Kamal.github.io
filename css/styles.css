@@ -682,7 +682,6 @@ a:focus-visible, button:focus-visible {
 
 .review-full-content {
     max-height: 0;
-    overflow: hidden;
     transition: max-height 0.4s ease-out;
     font-size: var(--fs-body);
     color: var(--text-muted);
